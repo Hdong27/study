@@ -1,0 +1,10 @@
+# 파일 추가
+git add . <== 전체 파일 추가
+git add 파일명 <== 선택 파일 추가
+
+# commit
+git commit -m "update" <== commit 내용 입력
+
+# push
+git push <== 초기 설정 후 사용가능
+git push origin master <== master로 push 및 자동 merge
