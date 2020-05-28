@@ -21,7 +21,7 @@ public class Solution_기능개발 {
 			
 			int count = 0;
 			// 배포 가능여부
-			while(progresses[index] >= 100) {
+			while(index < progresses.length && progresses[index] >= 100) {
 				count++;
 				index++;
 			}
