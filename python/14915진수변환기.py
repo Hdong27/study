@@ -12,15 +12,15 @@ def cal(m,n):
     temp1=str(m%n)
     if temp1=='10':
         temp1="A"
-    if temp1=='11':
+    elif temp1=='11':
         temp1="B"
-    if temp1=='12':
+    elif temp1=='12':
         temp1="C"
-    if temp1=='13':
+    elif temp1=='13':
         temp1="D"
-    if temp1=='14':
+    elif temp1=='14':
         temp1="E"
-    if temp1=='15':
+    elif temp1=='15':
         temp1="F"
     s.append(temp1)
     temp=m//n
@@ -35,11 +35,11 @@ def cal(m,n):
             s.append("C")
         elif temp == 13:
             s.append("D")
-        elif temp1 == 14:
+        elif temp == 14:
             s.append("E")
         elif temp == 15:
             s.append("F")
-        elif temp !=0:
+        elif 0<temp<10 :
             s.append(str(temp))
     return
 
