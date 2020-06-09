@@ -9,7 +9,6 @@ def cal(m,n):
     if n==10:
         s.append(str(m))
         return
-        
     temp1=str(m%n)
     if temp1=='10':
         temp1="A"
@@ -40,7 +39,7 @@ def cal(m,n):
             s.append("E")
         elif temp == 15:
             s.append("F")
-        elif temp > 0:
+        elif 0<temp<10 :
             s.append(str(temp))
     return
 
