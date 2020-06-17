@@ -38,21 +38,43 @@ public class test {
 		}
 		*/
 		
-		Queue q = new Queue();
+//		Queue q = new Queue();
+//		
+//		System.out.println(q.pull());
+//		
+//		q.add(1);
+//		q.add(2);
+//		q.add(3);
+//		q.add(4);
+//		q.add(5);
+//		
+//		System.out.println(q.getLength());
+//		System.out.println(q.peek());
+//		System.out.println(q.pull());
+//		System.out.println(q.pull());
+//		System.out.println(q.pull());
+//		System.out.println(q.pull());
 		
-		System.out.println(q.pull());
+		Point p1 = new Point(0, 0);
+		Point p2 = p1;
 		
-		q.add(1);
-		q.add(2);
-		q.add(3);
-		q.add(4);
-		q.add(5);
+		System.out.println(p1);
+		p1.x = 1;
+		p2.y = 2;
+		System.out.println(p2);
+	}
+	
+	static class Point {
+		int x;
+		int y;
 		
-		System.out.println(q.getLength());
-		System.out.println(q.peek());
-		System.out.println(q.pull());
-		System.out.println(q.pull());
-		System.out.println(q.pull());
-		System.out.println(q.pull());
+		public Point(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+		@Override
+		public String toString() {
+			return "x : " + x + ", y : " + y;
+		}
 	}
 }
