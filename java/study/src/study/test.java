@@ -55,13 +55,20 @@ public class test {
 //		System.out.println(q.pull());
 //		System.out.println(q.pull());
 		
-		Point p1 = new Point(0, 0);
-		Point p2 = p1;
+//		Point p1 = new Point(0, 0);
+//		Point p2 = p1;
+//		
+//		System.out.println(p1);
+//		p1.x = 1;
+//		p2.y = 2;
+//		System.out.println(p2);
 		
-		System.out.println(p1);
-		p1.x = 1;
-		p2.y = 2;
-		System.out.println(p2);
+		long sum = 1;
+		for (int i = 1; i <= 20; i++) {
+			sum *= i;
+		}
+		
+		System.out.println(sum);
 	}
 	
 	static class Point {
