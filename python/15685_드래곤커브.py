@@ -16,47 +16,23 @@ def gene(x, y, dir, k):
     if dir == 0 and x+1<101:
         x1=x+1
         y1=y
-        curve.append([x1, y1])
-        for i in range(k):
-            m=len(curve)
-            for j in range(m-2,-1,-1):
-                if 0<=-(curve[j][1]-y1)+x1<101 and 0<=(curve[j][0]-x1)+y1<101:
-                    curve.append([-(curve[j][1]-y1)+x1, (curve[j][0]-x1)+y1])
-            x1 = curve[-1][0]
-            y1 = curve[-1][1]
     elif dir == 1 and y-1>=0:
         x1 = x
         y1 = y-1
-        curve.append([x1, y1])
-        for i in range(k):
-            m = len(curve)
-            for j in range(m - 2, -1, -1):
-                if 0 <= -(curve[j][1] - y1) + x1 < 101 and 0 <= (curve[j][0] - x1) + y1 < 101:
-                    curve.append([-(curve[j][1] - y1) + x1, (curve[j][0] - x1) + y1])
-            x1 = curve[-1][0]
-            y1 = curve[-1][1]
     elif dir == 2 and x-1>=0:
         x1 = x - 1
         y1 = y
-        curve.append([x1, y1])
-        for i in range(k):
-            m = len(curve)
-            for j in range(m - 2, -1, -1):
-                if 0 <= -(curve[j][1] - y1) + x1 < 101 and 0 <= (curve[j][0] - x1) + y1 < 101:
-                    curve.append([-(curve[j][1] - y1) + x1, (curve[j][0] - x1) + y1])
-            x1 = curve[-1][0]
-            y1 = curve[-1][1]
     elif dir == 3 and y+1<101:
         x1 = x
         y1 = y+1
-        curve.append([x1, y1])
-        for i in range(k):
-            m = len(curve)
-            for j in range(m - 2, -1, -1):
-                if 0 <= -(curve[j][1] - y1) + x1 < 101 and 0 <= (curve[j][0] - x1) + y1 < 101:
-                    curve.append([-(curve[j][1] - y1) + x1, (curve[j][0] - x1) + y1])
-            x1 = curve[-1][0]
-            y1 = curve[-1][1]
+    curve.append([x1, y1])
+    for i in range(k):
+        m = len(curve)
+        for j in range(m - 2, -1, -1):
+            if 0 <= -(curve[j][1] - y1) + x1 < 101 and 0 <= (curve[j][0] - x1) + y1 < 101:
+                curve.append([-(curve[j][1] - y1) + x1, (curve[j][0] - x1) + y1])
+        x1 = curve[-1][0]
+        y1 = curve[-1][1]
 
 
 for i in range(len(dragon)):
